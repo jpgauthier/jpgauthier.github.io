@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=1280,height=720">
+    <title> Radio-Canada </title>
+	<style>
+		html, body, #video {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+    
+  </head>
+  <body>
+	<video id="video" controls="false" autoplay>
+		<source src="http://hdflash_1-lh.akamaihd.net/i/cancbft_1@95875/master.m3u8" type="application/vnd.apple.mpegurl"> 
+	</video>
+           
+    <script type="text/javascript">
+		var video = document.getElementById('video');
+		if (video.requestFullscreen) {
+			video.requestFullscreen();
+		} else if (video.webkitRequestFullscreen) {
+			video.webkitRequestFullscreen();
+		} else if (video.mozRequestFullScreen) {
+			video.mozRequestFullScreen();
+		} else if (video.msRequestFullscreen) {
+			video.msRequestFullscreen();
+		}
+    </script>       
+  </body>
+</html>
+
